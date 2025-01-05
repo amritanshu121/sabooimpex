@@ -1,0 +1,257 @@
+/* Highlights Section */
+.highlights {
+    background: #f9f9f9;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.highlights h2 {
+    font-size: 2rem;
+    color: #007bff;
+    margin-bottom: 1.5rem;
+}
+
+.highlight-cards {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    max-width: 300px;
+    text-align: center;
+    transition: box-shadow 0.3s;
+}
+
+.card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 1rem;
+}
+
+.card h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.card p {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+/* Industries Section */
+.industries {
+    padding: 2rem 1rem;
+    background: #fff;
+    text-align: center;
+}
+
+.industries h2 {
+    font-size: 2rem;
+    color: #007bff;
+    margin-bottom: 1.5rem;
+}
+
+.industry-list {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.industry {
+    text-align: center;
+    max-width: 150px;
+}
+
+.industry img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 0.5rem;
+}
+
+.industry p {
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Contact Call-to-Action */
+.contact-cta {
+    background: #007bff;
+    color: white;
+    padding: 2rem 1rem;
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.contact-cta h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.contact-cta p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.contact-cta .btn {
+    background: #ffdd40;
+    color: #333;
+    font-size: 1rem;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.contact-cta .btn:hover {
+    background: #ffc107;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .highlight-cards,
+    .industry-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card,
+    .industry {
+        max-width: 90%;
+    }
+}
+
+
+
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 169vh;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #007bff;
+    color: white;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+nav {
+    display: flex;
+    align-items: center;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+.nav-links li a:hover {
+    color: #ffdd40;
+}
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 0.3rem;
+}
+.hamburger div {
+    width: 25px;
+    height: 3px;
+    background: white;
+}
+main {
+    flex: 1;
+    margin-top: 80px;
+    padding: 2rem;
+    text-align: center;
+}
+.welcome h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #007bff;
+}
+.welcome p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+.btn {
+    background: #007bff;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+.btn:hover {
+    background: #0056b3;
+}
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+footer p {
+    margin: 0.3rem 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex;
+    }
+    .nav-links {
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        background: #007bff;
+        flex-direction: column;
+        align-items: center;
+        display: none;
+    }
+    .nav-links.active {
+        display: flex;
+    }
+    .nav-links li {
+        margin: 1rem 0;
+    }
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chemicals - Saboo Impex</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="chemicals.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Saboo Impex</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="chemicals.html">Chemicals</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="chemicals-section">
+            <h1>Our Chemicals</h1>
+            <div class="chemical-list">
+                <div class="chemical-item">
+                    <h2>Gold Plating Solution</h2>
+                    <p>High-quality solution for precise gold plating.</p>
+                    <button class="show-details-btn">Inquire Now</button>
+                    <div class="chemical-details">
+                        <p><strong>Details:</strong> This solution is ideal for high-quality gold plating, ensuring a smooth and durable finish on metals.</p>
+                        <p><strong>Price:</strong> $XXX per liter.</p>
+                        <a href="https://wa.me/9372513895?text=Inquiry+about+Gold+Plating+Solution" class="chat-link" target="_blank">Chat with Us on WhatsApp</a>
+                    </div>
+                </div>
+
+                <div class="chemical-item">
+                    <h2>Silver Nitrate</h2>
+                    <p>Pure silver nitrate for industrial applications.</p>
+                    <button class="show-details-btn">Inquire Now</button>
+                    <div class="chemical-details">
+                        <p><strong>Details:</strong> This chemical is used in various industries for its antiseptic properties and in silver electroplating.</p>
+                        <p><strong>Price:</strong> $XXX per gram.</p>
+                        <a href="https://wa.me/9372513895?text=Inquiry+about+Silver+Nitrate" class="chat-link" target="_blank">Chat with Us on WhatsApp</a>
+                    </div>
+                </div>
+
+                <div class="chemical-item">
+                    <h2>Copper Sulfate</h2>
+                    <p>Premium-grade copper sulfate for diverse uses.</p>
+                    <button class="show-details-btn">Inquire Now</button>
+                    <div class="chemical-details">
+                        <p><strong>Details:</strong> Copper sulfate is widely used in agriculture, electroplating, and in manufacturing various copper-based products.</p>
+                        <p><strong>Price:</strong> $XXX per kilogram.</p>
+                        <a href="https://wa.me/9372513895?text=Inquiry+about+Copper+Sulfate" class="chat-link" target="_blank">Chat with Us on WhatsApp</a>
+                    </div>
+                </div>
+                <!-- Add more chemical items as needed -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Saboo Impex. All rights reserved.</p>
+        <p>Quality Chemicals for Every Need</p>
+    </footer>
+
+    <script>
+        // JavaScript for Hamburger Menu
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+        // JavaScript for toggling chemical details
+        const showDetailsButtons = document.querySelectorAll('.show-details-btn');
+        
+        showDetailsButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const details = button.nextElementSibling; // The .chemical-details div
+                details.style.display = details.style.display === 'block' ? 'none' : 'block'; // Toggle visibility
+            });
+        });
+    </script>
+    <div class="contact-btn">
+    <a href="https://wa.me/9372513895" target="_blank" style="color: white; text-decoration: none;">
+        <i class="fab fa-whatsapp"></i> <!-- Use FontAwesome icon for WhatsApp -->
+    </a>
+</div>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Saboo Impex</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="about.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Saboo Impex</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="chemicals.html">Chemicals</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="about-section">
+            <h1>About Saboo Impex</h1>
+            <p>
+                Saboo Impex is a trusted name in the chemical industry, founded by <strong>Subhash Saboo</strong>. 
+                We specialize in supplying premium-grade chemicals for gold plating, idol making, and other 
+                industrial applications. Our commitment to quality and customer satisfaction has made us a 
+                preferred partner for businesses across India.
+            </p>
+            <p>
+                With years of experience and expertise, we ensure that every product meets stringent 
+                quality standards, catering to the diverse needs of our clients. At Saboo Impex, 
+                excellence is not just a goal, but a way of doing business.
+            </p>
+            <p>
+                Connect with us to experience unparalleled service and premium chemical products.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Saboo Impex. All rights reserved.</p>
+        <p>Quality Chemicals for Every Need</p>
+    </footer>
+
+    <script>
+        // JavaScript for Hamburger Menu
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

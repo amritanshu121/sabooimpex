@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saboo Impex - Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Saboo Impex</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="chemicals.html">Chemicals</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Welcome Section -->
+        <section class="welcome">
+            <h1>Welcome to Saboo Impex</h1>
+            <p>Your trusted partner for high-quality chemicals. We specialize in providing top-grade chemicals for gold plating, idol making, and more.</p>
+            <a href="chemicals.html" class="btn">Explore Chemicals</a>
+        </section>
+
+        <!-- Key Highlights -->
+        <section class="highlights">
+            <h2>Why Choose Us?</h2>
+            <div class="highlight-cards">
+                <div class="card">
+                    <img src="images/quality.png" alt="Quality Chemicals">
+                    <h3>Quality Chemicals</h3>
+                    <p>Providing only the best for your needs.</p>
+                </div>
+                <div class="card">
+                    <img src="images/delivery.png" alt="On-Time Delivery">
+                    <h3>On-Time Delivery</h3>
+                    <p>We ensure timely delivery for every order.</p>
+                </div>
+                <div class="card">
+                    <img src="images/support.png" alt="Customer Satisfaction">
+                    <h3>Customer Satisfaction</h3>
+                    <p>Our priority is your satisfaction.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Industries We Serve -->
+        <section class="industries">
+            <h2>Industries We Serve</h2>
+            <div class="industry-list">
+                <div class="industry">
+                    <img src="images/gold-plating.png" alt="Gold Plating">
+                    <p>Gold Plating</p>
+                </div>
+                <div class="industry">
+                    <img src="images/idol-making.png" alt="Idol Making">
+                    <p>Idol Making</p>
+                </div>
+                <div class="industry">
+                    <img src="images/electroplating.png" alt="Electroplating">
+                    <p>Electroplating</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Call-to-Action -->
+        <section class="contact-cta">
+            <h2>Contact Us</h2>
+            <p>Have questions or need chemicals? We’re here to help!</p>
+            <a href="contact.html" class="btn">Get in Touch</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Saboo Impex. All rights reserved.</p>
+        <p>Quality Chemicals for Every Need</p>
+    </footer>
+
+    <script>
+        // JavaScript for Hamburger Menu
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
